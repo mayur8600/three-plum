@@ -33,3 +33,16 @@ code {
 .block{
   display: block;
 }
+
+.popout {
+  animation: popout 0.2s ease;
+  -webkit-animation: popout 0.2s ease;
+}
+@keyframes popout {
+  from{transform:scale(0.9)}
+  to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+  from{-webkit-transform:scale(0.9)}
+  to{-webkit-transform:scale(1)}
+}

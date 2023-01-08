@@ -13,10 +13,10 @@ function ShortProfile(props) {
         setSelectedUserTwo(selectedDefaultTwo);
     }, [user, selectedDefaultOne, selectedDefaultTwo, setSelectedUsers]);
     return (
-        <div className='absolute right-0 z-10 mt-2 w-[20vw] origin-top-right rounded-md bg-white shadow-lg focus:outline-none transform opacity-100 scale-100'>
+        <div className='absolute right-0 z-10 mt-2 w-[20vw] origin-top-right rounded-md bg-white shadow-lg focus:outline-none popout'>
             <div className='py-1'>
                 <div className=' flex flex-col justify-center items-center gap-2 pb-3'>
-                    <img className='rounded-full' src={selectedUser?.profilepicture} width='50%' alt='img' />
+                    <img className='rounded-full' loading='lazy' src={selectedUser?.profilepicture} width='50%' alt='img' />
                     <p>{selectedUser?.name}</p>
                     <p className='text-[14px] text-gray-400'>{selectedUser?.email}</p>
                     <div className='mx-5 border-t border-gray-300 mt-3'>
