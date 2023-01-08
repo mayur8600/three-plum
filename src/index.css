@@ -24,25 +24,39 @@ code {
 
 /* Handle */
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #E4E7EB; 
+  background: #E4E7EB;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-.block{
+
+.block {
   display: block;
 }
 
+/* popout effect to dropdown */
 .popout {
   animation: popout 0.2s ease;
   -webkit-animation: popout 0.2s ease;
 }
+
 @keyframes popout {
-  from{transform:scale(0.9)}
-  to{transform:scale(1)}
+  from {
+    transform: scale(0.9)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
+
 @-webkit-keyframes popout {
-  from{-webkit-transform:scale(0.9)}
-  to{-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0.9)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }

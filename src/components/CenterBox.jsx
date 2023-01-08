@@ -1,5 +1,7 @@
 import UsersData from './UsersData'
+
 function CenterBox() {
+  
   return (
     <div className='h-[85vh] shadow-2xl w-2/5 rounded-[25px] bg-white border'>
       <div className='w-full rounded-t-[25px] flex justify-center items-center h-[16vh] text-gray-600 bg-gray-100 text-xl'>

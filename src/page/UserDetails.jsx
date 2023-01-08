@@ -18,6 +18,7 @@ function UserDetails() {
     const [popUp, setPopUp] = useState(false)
     const param = location.pathname.split('/');
     const navigate = useNavigate();
+
     useEffect(() => {
         userData.users.map((user) => {
             if (user.id === +param[1]) {
@@ -42,6 +43,7 @@ function UserDetails() {
     const HandlePopUp = () => {
         setPopUp(!popUp)
     }
+
     return (
         <div className='w-screen h-screen  flex gap-10 px-8  pt-3 overflow-x-hidden'>
             <div className='bg-gradient-to-r from-[#5168cd] to-[#3e57c8]  h-[95vh] w-[21vw] rounded-[23px] flex flex-col justify-center items-center px-8 text-white'>
@@ -61,7 +63,7 @@ function UserDetails() {
                                 <CheckOutsideClick onClickOutside={closeDropdown}>
                                     <button className='inline-flex w-full justify-center rounded-md  bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:outline-none' onClick={HandlePopUp}>
                                         <div className=' cursor-pointer flex justify-end gap-3 items-center'>
-                                            <img className='rounded-full w-[40px]' src={selectedUser?.profilepicture} alt='img'/>
+                                            <img className='rounded-full w-[40px]' src={selectedUser?.profilepicture} alt='img' />
                                             <p>{selectedUser?.name}</p>
                                         </div>
                                     </button>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Background = () => {
+  
   return (
     <>
       <div className='h-[20vh] bg-[#6337c8]'></div>
