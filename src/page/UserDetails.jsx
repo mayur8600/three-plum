@@ -63,7 +63,7 @@ function UserDetails() {
                                 <CheckOutsideClick onClickOutside={closeDropdown}>
                                     <button className='inline-flex w-full justify-center rounded-md  bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:outline-none' onClick={HandlePopUp}>
                                         <div className=' cursor-pointer flex justify-end gap-3 items-center'>
-                                            <img className='rounded-full w-[40px]' src={selectedUser?.profilepicture} alt='img' />
+                                            <img className='rounded-full w-[40px]' loading='eager' src={selectedUser?.profilepicture} alt='img' />
                                             <p>{selectedUser?.name}</p>
                                         </div>
                                     </button>
